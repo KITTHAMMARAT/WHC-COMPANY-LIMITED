@@ -149,3 +149,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+const carousel = document.querySelector('#carouselExample');
+const items = carousel.querySelectorAll('.carousel-item');
+
+carousel.addEventListener('slide.bs.carousel', function (event) {
+  // ลบ class เก่า
+  items.forEach(item => {
+    item.classList.remove('next', 'prev');
+  });
+
+  // เพิ่ม class สำหรับ slide ออกและเข้า
+  if (event.direction === 'left') {
+    event.relatedTarget.classList.add('next'); // สไลด์ออกด้านซ้าย
+  } else {
+    event.relatedTarget.classList.add('prev'); // สไลด์ออกด้านขวา
+  }
+});
