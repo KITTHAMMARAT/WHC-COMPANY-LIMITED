@@ -665,3 +665,21 @@ section {
 .your-section-class {
   background-color: transparent !important;
 }
+
+/* ปรับปรุงความชัดของปุ่มถัดไปและย้อนกลับ */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px; /* กำหนดความกว้างของปุ่ม */
+  height: 50px; /* ความสูง */
+  background-color: rgba(0, 0, 0, 0.5); /* พื้นหลังสีดำโปร่งแสง */
+  border-radius: 50%; /* ทำให้เป็นวงกลม */
+}
+
+/* เพิ่มความชัดของไอคอน */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #fff; /* สีของไอคอนเป็นสีขาว */
+  padding: 10px; /* เพิ่ม padding รอบไอคอน */
+  border-radius: 50%; /* ทำให้ไอคอนเป็นวงกลม */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* เงาให้เด่นชัดขึ้น */
+}
