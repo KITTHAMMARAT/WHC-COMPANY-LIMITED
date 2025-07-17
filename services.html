@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>บริการของเรา - WHC Company Limited</title>
+<!-- สไตล์ CSS สำหรับความสวยงาม -->
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #222;
+    padding: 15px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+}
+
+.nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.nav a:hover {
+    background-color: #333;
+}
+
+.services-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.service-card {
+    background-color: #fff;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.service-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.service-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.view-all-btn {
+    display: block;
+    width: 200px;
+    margin: 30px auto 0 auto;
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+}
+
+.view-all-btn:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h1>บริการของเรา</h1>
+</div>
+
+<!-- Navigation Bar -->
+<div class="nav">
+    <a href="index.html">หน้าแรก</a>
+    <a href="about.html">เกี่ยวกับเรา</a>
+    <a href="services.html">บริการ</a>
+    <a href="contact.html">ติดต่อเรา</a>
+</div>
+
+<!-- เนื้อหาหลัก -->
+<div class="services-section">
+
+    <!-- หัวข้อ -->
+    <div class="services-header">
+        บริการของเรา
+    </div>
+
+    <!-- รายการบริการ -->
+    <div class="service-card">
+        <div class="service-title">บริการที่ 1</div>
+        <div class="service-description">
+            รายละเอียดเกี่ยวกับบริการที่ 1 เช่น การให้คำปรึกษาทางธุรกิจ การวางแผนกลยุทธ์ และการสนับสนุนด้านการดำเนินงาน เพื่อช่วยให้ธุรกิจของคุณเติบโตอย่างมั่นคง
+        </div>
+        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+    </div>
+
+    <div class="service-card">
+        <div class="service-title">บริการที่ 2</div>
+        <div class="service-description">
+            รายละเอียดเกี่ยวกับบริการที่ 2 เช่น การจัดการด้านการตลาด การสร้างแบรนด์ การประชาสัมพันธ์ และกลยุทธ์การขาย เพื่อเสริมสร้างความแข็งแกร่งให้กับธุรกิจของคุณ
+        </div>
+        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+    </div>
+
+    <div class="service-card">
+        <div class="service-title">บริการที่ 3</div>
+        <div class="service-description">
+            รายละเอียดเกี่ยวกับบริการที่ 3 เช่น การให้คำปรึกษาทางด้านเทคนิค การพัฒนาระบบไอที การสนับสนุนด้านเทคโนโลยี เพื่อเพิ่มประสิทธิภาพให้กับธุรกิจของคุณ
+        </div>
+        <a href="#" class="btn">อ่านเพิ่มเติม</a>
+    </div>
+
+    <!-- ปุ่มดูเพิ่มเติม -->
+    <button class="view-all-btn" onclick="alert('แสดงข้อมูลเพิ่มเติมทั้งหมด')">ดูบริการทั้งหมด</button>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2023 WHC Company Limited. สงวนลิขสิทธิ์</p>
+</footer>
+
+</body>
+</html>
